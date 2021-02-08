@@ -1,0 +1,187 @@
+:root {
+    --basic-black: #000000;
+    --basic-azure: #81B3D2;
+    --basic-brown: #766357;
+    --basic-dark-azure: #5496BD;
+    --basic-extra-azure: #669EC0;
+    --basic-white: #ffffff;
+    --basic-dark-brown: #503E33;
+    --basic-extra-brown: #604E43;
+    --basic-opacity-black: #333333;
+    --basic-gray: #EEEEEE;
+
+    --special: #663d15;
+  }
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("../img/background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.main-nav {
+ 
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+.site-nav {
+    list-style: none;
+}
+
+.site-nav a {
+    color: var(--basic-black);
+}
+
+.site-nav a:hover {
+    color: var(--basic-azure);
+}
+.site-nav a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.site-nav a:focus {
+    color: var(--basic-brown);
+}
+
+.description {
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 21px;
+    line-height: 26px;
+}
+.description p {
+    font-weight: 400;
+}
+
+.main-reason {
+    list-style: none;
+}
+.main-reason h2 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.main-reason p {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-opacity-black);
+    font-weight: 400;
+}
+
+.first-reason {
+    text-align: center;
+    background-color: var(--basic-azure);
+    color: var(--basic-white);
+}
+
+.first-reason p {
+    color: var(--basic-white);
+}
+
+
+.product-reason {
+    list-style: none;
+    background-color: var(--basic-white);
+}
+
+
+.product-reason-item {
+    text-align: center;
+}
+
+.second-reason {
+    text-align: center;
+    background-color: var(--basic-azure);
+    color: var(--basic-white);
+}
+
+.second-reason p {
+    color: var(--basic-white);
+}
+
+.else-reason {
+    text-align: center;
+    background-color: var(--basic-gray);
+}
+
+.interest {
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.interest p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.button {
+    padding: 30px 125px;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: var(--basic-brown);
+    color: var(--basic-white);
+}
+
+.button:hover {
+    background-color: var(--basic-extra-brown);
+}
+
+.button:focus {
+    background-color: var(--basic-dark-brown);
+    color: rgb(255,255,255,0.3);
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.footer-contact {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-button {
+    padding: 15px 18px;
+    background-color: var(--basic-azure);
+}
+
+.social-button:hover {
+    background-color: var(--basic-extra-azure);
+}
+
+.social-button:focus {
+    background-color: var(--basic-dark-azure);
+}
+
+.footer-copyright h2 {
+    font-weight: 400;
+}
