@@ -9,6 +9,7 @@
     --basic-extra-brown: #604E43;
     --basic-opacity-black: #333333;
     --basic-gray: #EEEEEE;
+    --basic-white-opacity:  rgb(255,255,255,0.3);
 
     --special: #663d15;
   }
@@ -153,7 +154,7 @@ img {
 
 .button:focus {
     background-color: var(--basic-dark-brown);
-    color: rgb(255,255,255,0.3);
+    color: var(--basic-white-opacity);
 }
 
 .main-footer {
