@@ -166,12 +166,16 @@ img {
     line-height: 26px;
 }
 
+.footer-phone {
+    color: var(--basic-black);
+}
+
 .social-list {
     list-style: none;
 }
 
 .social-button {
-    padding: 15px 18px;
+    padding: 15px 13px;
     background-color: var(--basic-azure);
 }
 
