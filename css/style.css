@@ -25,10 +25,18 @@ body {
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: var(--basic-white);
-    background-image: url("../img/background-photo.jpg");
+    
     background-position: top center;
     background-repeat: no-repeat;
 }
+
+.container {
+    text-align: center;
+    background: url("../img/background-photo.jpg") no-repeat;
+    background-size: 100% auto;
+    
+}
+
 
 a {
     text-decoration: none;
@@ -40,9 +48,9 @@ img {
   }
 
 .main-nav {
- 
+    text-align: center;
     color: var(--basic-black);
-    background-color: transparent;
+    background-color: var(--basic-white);
 }
 
 .site-nav {
@@ -75,6 +83,7 @@ img {
 }
 .description p {
     font-weight: 400;
+    color: var(--basic-opacity-black);
 }
 
 .main-reason {
@@ -140,12 +149,17 @@ img {
     font-weight: 400;
 }
 
+.interest h2 {
+    font-size: 30px;
+}
+
 .button {
     padding: 30px 125px;
     font-size: 21px;
     line-height: 26px;
     background-color: var(--basic-brown);
     color: var(--basic-white);
+    display: block;
 }
 
 .button:hover {
@@ -188,5 +202,6 @@ img {
 }
 
 .footer-copyright h2 {
+    font-size: 14px;
     font-weight: 400;
 }
