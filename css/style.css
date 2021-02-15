@@ -242,6 +242,10 @@ img {
     color: var(--basic-opacity-black);
 }
 
+.catalog-hotel {
+    list-style: none;
+}
+
 .catalog-hotel p {
     font-weight: 400;
     font-size: 14px;
@@ -253,6 +257,7 @@ img {
     width: 83px;
     height: 21px;
     padding: 3px 12px 3px 15px;
+    color: #666666;
     background-color: #F2F2F2;
     display: block;
 }
@@ -280,6 +285,16 @@ img {
     text-align: none;
   }
 
+
+.found-catalog p {
+    width: 75px;
+    height: 18px;
+    margin: 0%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
 .found-catalog-list {
     list-style: none;
 
@@ -295,7 +310,7 @@ img {
 
 .arrow {
     border: none;
-
+    color: #CACACA;
 }
 
 
@@ -315,6 +330,9 @@ img {
 .arrow:focus {
     color: var(--basic-azure);
 }
+
+
+
 .button-detailed {
     text-align: center;
     width: 110px;
@@ -344,3 +362,7 @@ img {
     line-height: 21px;
 }
 
+.button-found.active {
+    color: var(--basic-azure);
+    border: none;
+}
