@@ -10,6 +10,7 @@
     --basic-opacity-black: #333333;
     --basic-gray: #EEEEEE;
     --basic-white-opacity:  rgb(255,255,255,0.3);
+    --basic-white-body: #F2F2F2;
 
     --special: #663d15;
   }
@@ -24,10 +25,21 @@ body {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-white);
+    
     
     background-position: top center;
     background-repeat: no-repeat;
+    background: var(--basic-white-body);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.wrapper {
+    width: 1200px;
+    background-color: var(--basic-white);
+    margin: 0 auto;
 }
 
 .container {
@@ -99,6 +111,8 @@ img {
 
 .main-reason {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .main-reason h3 {
     font-size: 21px;
@@ -112,22 +126,39 @@ img {
     font-weight: 400;
 }
 
+.add-reason {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
 .first-reason {
     text-align: center;
     background-color: var(--basic-azure);
     color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .first-reason p {
     color: var(--basic-white);
 }
 
+.first-reason-text {
+    grid-column-start: 1;
+}
+
+.first-reason-img {
+    grid-column-end: 4;
+    grid-column-start: 2
+}
 
 .product-reason {
     list-style: none;
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 .product-reason-item {
     text-align: center;
@@ -142,10 +173,24 @@ img {
     text-align: center;
     background-color: var(--basic-azure);
     color: var(--basic-white);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr ;
 }
 
 .second-reason p {
     color: var(--basic-white);
+}
+
+.second-reason-text {
+    grid-column-end: 4;
+}
+
+.second-reason-img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
 }
 
 .else-reason {
@@ -189,6 +234,8 @@ img {
 
 .main-footer {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contact {
@@ -224,10 +271,6 @@ img {
 
 /* catalog */
 
-.page-catalog {
-
-}
-
 .name-hotel {
     font-size: 21px;
     line-height: 26px;
@@ -244,12 +287,27 @@ img {
 
 .catalog-hotel {
     list-style: none;
+    display: grid;
 }
 
 .catalog-hotel p {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+}
+
+.catalog-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 150px;
+}
+
+.catalog-img {
+
+}
+
+.catalog-description {
+    text-align: left;
 }
 
 .rating {
@@ -259,7 +317,6 @@ img {
     padding: 3px 12px 3px 15px;
     color: #666666;
     background-color: #F2F2F2;
-    display: block;
 }
 .star {
     color: var(--basic-azure);
@@ -365,4 +422,10 @@ img {
 .button-found.active {
     color: var(--basic-azure);
     border: none;
+}
+
+/* Grid */
+
+.page {
+    height: 100%;
 }

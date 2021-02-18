@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
+  <div class="wrapper">
     <header class="main-header">
         <nav class="main-nav">
             <a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" alt="logo" width="138" height="70">>
+              <img src="img/logo.svg" alt="logo" width="138" height="70">
             </a>
           <ul class="site-nav">
             <li><a href="#">Информация</a></li>
@@ -92,35 +93,53 @@
             </div>
 
             <ul class="catalog-hotel">
-                <li>
-                    <a class="name-hotel" href="#">Amara Resort & Spa</a>
-                    <img src="img/hotel.jpg" alt="Hotel" width="135" height="95">
-                    <p>Гостиница</p>
-                    <p>От 4000 Р.</p>
-                    <a class="button-detailed" href="">Подробнее</a>
-                    <a class="button catalog" href="">Забронировать</a>
-                    <div class="star">&#9733;&#9733;&#9733;&#9733;</div>
-                    <p class="rating">Рейтинг: 8,5</p>
+                <li class="catalog-item">
+                    <div class="catalog-image">
+                      <img src="img/hotel.jpg" alt="Hotel" width="135" height="95">
+                    </div>
+                    <div class="catalog-description">
+                      <a class="name-hotel" href="#">Amara Resort & Spa</a>
+                      <p>Гостиница</p>
+                      <p>От 4000 Р.</p>
+                      <a class="button-detailed" href="">Подробнее</a>
+                      <a class="button catalog" href="">Забронировать</a>
+                    </div>
+                    <div class="catalog-rating">
+                      <div class="star">&#9733;&#9733;&#9733;&#9733;</div>
+                      <p class="rating">Рейтинг: 8,5</p>
+                    </div>
                 </li>
-                <li>
-                    <a class="name-hotel" href="#">Desert Quail Inn</a>
+                <li class="catalog-item">
+                  <div class="catalog-image">
                     <img src="img/Motel.jpg" alt="Motel" width="135" height="95">
+                  </div>
+                  <div class="catalog-description">
+                    <a class="name-hotel" href="#">Desert Quail Inn</a>
                     <p>Мотель</p>
                     <p>От 3000 Р.</p>
                     <a class="button-detailed" href="">Подробнее</a>
                     <a class="button catalog" href="">Забронировать</a>
+                  </div>
+                  <div class="catalog-rating">
                     <div class="star">&#9733;&#9733;&#9733;</div>
                     <p class="rating">Рейтинг: 8,9</p>
+                  </div>
                 </li>
-                <li>
-                    <a class="name-hotel" href="#">Villas at Poco Diablo</a>
+                <li class="catalog-item">
+                  <div class="catalog-image">
                     <img src="img/apartments.jpg" alt="apartments" width="135" height="95">
+                  </div>
+                  <div class="catalog-description">
+                    <a class="name-hotel" href="#">Villas at Poco Diablo</a>
                     <p>Апартаменты</p>
                     <p>От 2000 Р.</p>
                     <a class="button-detailed" href="">Подробнее</a>
                     <a class="button catalog" href="">Забронировать</a>
+                  </div>
+                  <div class="catalog-rating">
                     <div class="star">&#9733;&#9733;</div>
                     <p class="rating">Рейтинг: 9,2</p>
+                  </div>
                 </li>
             </ul>
 
@@ -168,5 +187,6 @@
         </a>
       </section>
     </footer>
+  </div>
 </body>
 </html>
