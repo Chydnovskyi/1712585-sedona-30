@@ -16,18 +16,18 @@
 <body class="page-body">
   <div class="wrapper">
     <header class="main-header">
-        <nav class="main-nav">
-            <a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" alt="logo" width="138" height="70">
-            </a>
-          <ul class="site-nav">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="main-nav">
+        <a class="main-header-logo" href="#">
+          <img src="img/logo.svg" alt="logo" width="138" height="70">
+        </a>
+        <ul class="site-nav">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="site-nav-castom"><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="page-catalog container">
         <section class="filter">
@@ -82,12 +82,12 @@
         <section>
             <div class="found-catalog">
                 <h2>Найдено: 3</h2>
-                <p>Сортировка:</p>
+                <div><p>Сортировка:</p></div>
                 <ul class="found-catalog-list">
                     <li><a class="button-found active" href="#">По цене</a></li>
                     <li><a class="button-found" href="#">По типу</a></li>
                     <li><a class="button-found" href="#">По рейтингу</a></li>
-                    <li><a class="button-found arrow" href="#">&#9660;</a></li>
+                    <li class="site-nav-castom"><a class="button-found arrow" href="#">&#9660;</a></li>
                     <li><a class="button-found arrow" href="#">&#9650;</a></li>
                 </ul>
             </div>
@@ -99,10 +99,14 @@
                     </div>
                     <div class="catalog-description">
                       <a class="name-hotel" href="#">Amara Resort & Spa</a>
-                      <p>Гостиница</p>
-                      <p>От 4000 Р.</p>
+                      <div class="catalog-description-row">
+                        <p>Гостиница</p>
+                        <p>От 4000 Р.</p>
+                      </div>
+                      <div class="catalog-description-row">
                       <a class="button-detailed" href="">Подробнее</a>
                       <a class="button catalog" href="">Забронировать</a>
+                    </div>
                     </div>
                     <div class="catalog-rating">
                       <div class="star">&#9733;&#9733;&#9733;&#9733;</div>
@@ -115,10 +119,14 @@
                   </div>
                   <div class="catalog-description">
                     <a class="name-hotel" href="#">Desert Quail Inn</a>
-                    <p>Мотель</p>
-                    <p>От 3000 Р.</p>
+                    <div class="catalog-description-row">
+                      <p>Мотель</p>
+                      <p>От 3000 Р.</p>
+                  </div>
+                  <div class="catalog-description-row">
                     <a class="button-detailed" href="">Подробнее</a>
                     <a class="button catalog" href="">Забронировать</a>
+                  </div>
                   </div>
                   <div class="catalog-rating">
                     <div class="star">&#9733;&#9733;&#9733;</div>
@@ -131,10 +139,14 @@
                   </div>
                   <div class="catalog-description">
                     <a class="name-hotel" href="#">Villas at Poco Diablo</a>
-                    <p>Апартаменты</p>
-                    <p>От 2000 Р.</p>
+                    <div class="catalog-description-row">
+                      <p>Апартаменты</p>
+                      <p>От 2000 Р.</p>
+                    </div>
+                    <div class="catalog-description-row">
                     <a class="button-detailed" href="">Подробнее</a>
                     <a class="button catalog" href="">Забронировать</a>
+                  </div>
                   </div>
                   <div class="catalog-rating">
                     <div class="star">&#9733;&#9733;</div>
@@ -148,12 +160,12 @@
 
     <footer class="main-footer">
       <section class="footer-contact">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p>#visitSEDONA</p>
         <a class="footer-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
-        <h2>соцсети</h2>
+        <h2 class="visually-hidden">соцсети</h2>
         <ul class="social-list">
           <li>
             <a class="social-button" href="#">
