@@ -1036,6 +1036,16 @@ legend {
     color: var(--basic-white);
     background: var(--basic-azure);
     border: none;
+    outline: none;
+}
+
+.search-button:hover {
+    background: var(--basic-extra-azure);
+}
+
+.search-button:active {
+    background: var(--basic-dark-azure);
+    color: var(--basic-white-opacity);
 }
 
 .adults-label .minus {
