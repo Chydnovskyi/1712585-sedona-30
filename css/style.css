@@ -16,6 +16,7 @@
     --basic-calendar: #A9A9A9;
     --basic-academy: #231F20;
     --basic-shadow-opacity: rgb(171, 171, 171, 0.3);
+    --basic-arrow:  #CACACA;
     --special: #663d15;
   }
 
@@ -199,7 +200,7 @@ h1, h2, h3, h4 {
 .main-reason h3 {
     font-size: 21px;
     line-height: 21px;
-    margin-top: 47px;
+    margin-top: 45px;
 }
 
 .main-reason p {
@@ -210,8 +211,8 @@ h1, h2, h3, h4 {
 }
 
 .reason-numbers {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 28px;
+    margin-bottom: 24px;
 }
 
 
@@ -262,13 +263,14 @@ h1, h2, h3, h4 {
 .product-reason-item h4{
     font-size: 21px;
     line-height: 21px;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 27px;
 }
 
 
 .product-reason >.product-reason-item:nth-child(2) h4 {
-    padding-bottom: 27px;
+    padding-top: 19px;
+    padding-bottom: 28px;
 }
 
 .product-reason >.product-reason-item:last-child {
@@ -288,8 +290,11 @@ h1, h2, h3, h4 {
 }
 
 .second-reason p {
-   
     color: var(--basic-white);
+}
+
+.second-reason h3 {
+    margin-top: 49px;
 }
 
 .second-reason-text {
@@ -301,6 +306,11 @@ h1, h2, h3, h4 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1;
+}
+
+.second-reason .reason-numbers {
+    margin-top: 27px;
+    margin-bottom: 24px;
 }
 
 .else-reason {
@@ -471,7 +481,7 @@ h1, h2, h3, h4 {
     color: var(--basic-black);
 
     min-width: 240px;
-    margin-top: -7px;
+    margin-top: -6px;
     margin-left: -47px;
 }
 
@@ -498,7 +508,7 @@ h1, h2, h3, h4 {
 }
 
 .catalog-item {
-    padding: 31px 73px 30px;
+    padding: 27px 73px 30px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     min-height: 150px;
@@ -512,6 +522,7 @@ h1, h2, h3, h4 {
 
 
 .catalog-item:last-child {
+    padding: 29px 73px 30px;
     border-bottom: 1px solid var(--basic-border-grey);
 }
 
@@ -538,6 +549,7 @@ h1, h2, h3, h4 {
 }
 
 .catalog-image {
+    padding-top: 2px;
     width: 135px;
     height: 90px;
 }   
@@ -553,11 +565,13 @@ h1, h2, h3, h4 {
     margin-left: auto;
 }
 .star {
-    font-size: 21px;
-    line-height: 13px;
-    color: var(--basic-azure);
     margin-left: auto;
     margin-bottom: auto;
+}
+
+.star-symbol {
+    width: 18px;
+    height: 17px;
 }
 
 legend {
@@ -765,6 +779,7 @@ legend {
 }
 
 .found-catalog h2 {
+    padding-bottom: 4px;
     min-width: 117px;
     margin-right: 46px;
 }
@@ -818,7 +833,7 @@ legend {
 .arrow {
     font-size: 15px;
     border: none;
-    color: #CfCA;
+    color: var(--basic-arrow);
 }
 
 .arrow.active {
@@ -915,7 +930,7 @@ legend {
 .date-arrival-label {
     width: 121px;
     height: 26px;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-right: 22px;
     box-sizing: border-box;
 }
@@ -996,7 +1011,7 @@ legend {
     height: 26px;
     margin-right: 12px;
     position: relative;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-right: 30px;
     box-sizing: border-box;
 }
@@ -1006,7 +1021,7 @@ legend {
     height: 26px;
     margin-left: 52px;
     position: relative;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-right: 27px;
     box-sizing: border-box;
 }
@@ -1050,49 +1065,60 @@ legend {
 
 .adults-label .minus {
     position: absolute;
-    left: 125px;
-    top: 3px;
+    left: 121px;
+    top: 0;
 }
 
 .adults-label .plus {
     position: absolute;
-    left: 201px;
-    top: 7px;
+    left: 196px;
+    top: 3px;
 }
 
 .children-label .minus {
     position: absolute;
-    left: 79px;
-    top: 3px;
+    left: 74px;
+    top: 0;
 }
 
 .children-label .plus {
     position: absolute;
-    left: 155px;
-    top: 8px;
+    left: 150px;
+    top: 3px;
 }
 
-.minus-icon {
+.minus {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.plus {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.minus svg {
     fill:var(--basic-calendar);
+
 }
 
-.minus-icon:hover {
+.minus:hover svg {
     fill:var(--basic-black);
 }
 
-.minus-icon:active {
+.minus:active svg {
     fill:var(--basic-azure);
 }
 
-.plus-icon {
+.plus svg {
     fill:var(--basic-calendar);
 }
 
-.plus-icon:hover {
+.plus:hover svg {
     fill:var(--basic-black);
 }
 
-.plus-icon:active {
+.plus:active svg {
     fill:var(--basic-azure);
 }
 
