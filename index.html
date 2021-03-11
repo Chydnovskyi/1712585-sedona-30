@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     <div class="wrapper">
@@ -132,32 +132,34 @@
                   <input class="check" type="text" id="date-departure" data-date-formate="" value="4 июля 2017">
               </div>
               <div class="people">
-                <label class="adults-label" for="adults">Взрослые: 
-                  <button class="minus" type="submit">
-                    <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="12" height="3"/>
-                    </svg>              
-                  </button>
-                  <button class="plus" type="submit">
-                    <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-                    </svg>
-                  </button>
-                </label>
-                <input class="check" type="text" id="adults" data-date-formate="" value="2">
-                <label class="children-label" for="children">Дети:
-                  <button class="minus" type="submit">
-                    <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="12" height="3"/>
-                    </svg>
-                  </button>
-                  <button class="plus" type="submit">
-                    <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="adults-items">
+                    <label class="adults-label" for="adults">Взрослые:</label>
+                    <input class="check" type="text" id="adults" data-date-formate="" value="2">
+                    <button class="minus" type="submit" id="adults">
+                      <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="3"/>
+                      </svg>              
+                    </button>
+                    <button class="plus" type="submit" id="adults1">
+                      <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-                    </svg>
-                  </button>
-                </label>
-                <input class="check" type="text" id="children" data-date-formate="" value="0">
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="children-items">
+                    <label class="children-label" for="children">Дети:</label>
+                    <input class="check" type="text" id="children1" data-date-formate="" value="0">
+                    <button class="minus" type="submit" id="children1">
+                      <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="3"/>
+                      </svg>
+                    </button>
+                    <button class="plus" type="submit" id="children">
+                      <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                      </svg>
+                    </button>
+                  </div>
               </div>
               <input class="search-button" type="submit" value="Найти">
             </form>
@@ -212,7 +214,7 @@
       </footer>
   </div>
 
-    <script src="js/search.js"></script>
+    <script src="js/search.min.js"></script>
       
 
   </body>

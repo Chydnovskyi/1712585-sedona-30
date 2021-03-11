@@ -17,7 +17,9 @@
     --basic-academy: #231F20;
     --basic-shadow-opacity: rgb(171, 171, 171, 0.3);
     --basic-arrow:  #CACACA;
+    --basic-rating: #666666;
     --special: #663d15;
+
   }
 
 body {
@@ -961,7 +963,7 @@ legend {
 .date-departure-label {
     width: 125px;
     height: 26px;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-right: 19px;
     box-sizing: border-box;
 }
@@ -1046,7 +1048,7 @@ legend {
 .people .children-label {
     width: 68px;
     height: 26px;
-    margin-left: 52px;
+    margin-left: 50px;
     position: relative;
     padding-top: 7px;
     padding-right: 27px;
@@ -1094,28 +1096,39 @@ legend {
     outline: 2px solid black;
 }
 
-.adults-label .minus {
+.adults-items {
+    display: flex;
+    position: relative;
+}
+
+.children-items {
+    display: flex;
+    position: relative;
+}
+
+
+.adults-items .minus {
     position: absolute;
     left: 120px;
     top: 5px;
 }
 
-.adults-label .plus {
+.adults-items .plus {
     position: absolute;
     left: 196px;
-    top: 9px;
+    top: 8px;
 }
 
-.children-label .minus {
+.children-items .minus {
     position: absolute;
-    left: 74px;
+    left: 126px;
     top: 5px;
 }
 
-.children-label .plus {
+.children-items .plus {
     position: absolute;
-    left: 150px;
-    top: 9px;
+    left: 202px;
+    top: 8px;
 }
 
 .minus {
