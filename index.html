@@ -107,7 +107,7 @@
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <a class="button search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
-          <section class="interest-search interest-search-show">
+          <div class="interest-search interest-search-show">
             <form class="interest-form" method="GET" action="https://echo.htmlacademy.ru/">
               <div class="date">
                 <label class="date-arrival-label" for="date-arrival">Дата заезда: 
@@ -135,12 +135,12 @@
                   <div class="adults-items">
                     <label class="adults-label" for="adults">Взрослые:</label>
                     <input class="check" type="text" id="adults" data-date-formate="" value="2">
-                    <button class="minus" type="submit" id="adults">
+                    <button class="minus" type="submit">
                       <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="12" height="3"/>
                       </svg>              
                     </button>
-                    <button class="plus" type="submit" id="adults1">
+                    <button class="plus" type="submit">
                       <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
                       </svg>
@@ -148,13 +148,13 @@
                   </div>
                   <div class="children-items">
                     <label class="children-label" for="children">Дети:</label>
-                    <input class="check" type="text" id="children1" data-date-formate="" value="0">
-                    <button class="minus" type="submit" id="children1">
+                    <input class="check" type="text" id="children" data-date-formate="" value="0">
+                    <button class="minus" type="submit">
                       <svg class="minus-icon" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="12" height="3"/>
                       </svg>
                     </button>
-                    <button class="plus" type="submit" id="children">
+                    <button class="plus" type="submit">
                       <svg class="plus-icon" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
                       </svg>
@@ -163,7 +163,7 @@
               </div>
               <input class="search-button" type="submit" value="Найти">
             </form>
-          </section>
+          </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>

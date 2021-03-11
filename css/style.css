@@ -795,7 +795,7 @@ legend {
 }
 
 .found-catalog h2 {
-    padding-bottom: 4px;
+    padding-bottom: 5px;
     min-width: 117px;
     margin-right: 46px;
 }
@@ -817,6 +817,7 @@ legend {
     margin: 0;
     display: flex;
     width: 100%;
+    padding-bottom: 2px;
 }
 
 .found-catalog-list li {
