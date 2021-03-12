@@ -3,7 +3,6 @@ const searchPopup = document.querySelector(".interest-search");
 const date_arrival = document.querySelector("#date-arrival");
 const date_departure = document.querySelector("#date-departure");
 const interest_form = document.querySelector(".interest-form");
-const search_button = document.querySelector(".search-button");
 
 let isStorageSupport = true;
 let storage = "";
