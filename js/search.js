@@ -2,7 +2,8 @@ const search = document.querySelector(".search");
 const searchPopup = document.querySelector(".interest-search");
 const date_arrival = document.querySelector("#date-arrival");
 const date_departure = document.querySelector("#date-departure");
-const interest_form = document.querySelector(".interest-form")
+const interest_form = document.querySelector(".interest-form");
+const search_button = document.querySelector(".search-button");
 
 let isStorageSupport = true;
 let storage = "";
@@ -21,8 +22,9 @@ search.addEventListener("click", function (evt) {
 interest_form.addEventListener("submit", function (evt) {
     if (!date_arrival.value || !date_departure.value) {
       evt.preventDefault();
-      searchPopup.classList.add("interest-search-error");
+      searchPopup.classList.toggle("interest-search-error");
     } else if (isStorageSupport) {
         localStorage.setItem("interest", date_arrival.value);
       }
   });
+
