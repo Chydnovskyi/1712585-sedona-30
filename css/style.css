@@ -969,11 +969,13 @@ legend {
     box-sizing: border-box;
 }
 
+.calendar {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+}
 
 .calendar .calendar-icon {
-    position: absolute;
-    top: 7px;
-    left: 428px;
     fill: var(--basic-calendar);
 }
 
@@ -1077,11 +1079,14 @@ legend {
     font-family: "PT Sans", sans-serif;
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--basic-white);
     background: var(--basic-azure);
     border: none;
     outline: none;
+    padding: 0;
+    padding-bottom: 3px;
 }
 
 .search-button:hover {
