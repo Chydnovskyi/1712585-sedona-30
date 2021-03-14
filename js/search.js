@@ -8,7 +8,8 @@ let isStorageSupport = true;
 let storage = "";
 
 try {
-  storage = localStorage.getItem("interest");
+  storage = localStorage.getItem("date_arrival");
+  storage = localStorage.getItem("date_departure");
 } catch (err) {
   isStorageSupport = false;
 }
@@ -19,11 +20,15 @@ search.addEventListener("click", function (evt) {
 });
 
 interest_form.addEventListener("submit", function (evt) {
-    if (!date_arrival.value || !date_departure.value) {
-      evt.preventDefault();
-      searchPopup.classList.toggle("interest-search-error");
-    } else if (isStorageSupport) {
-        localStorage.setItem("interest", date_arrival.value);
+    if (date_arrival.value && date_departure.value) {
+      searchPopup.classList.remove("interest-search-error");
+      if (isStorageSupport) {
+        localStorage.setItem("date_arrival", date_arrival.value);
+        localStorage.setItem("date_departure", date_departure.value);
       }
+    } else if (!date_arrival.value || !date_departure.value) {
+      evt.preventDefault();
+      searchPopup.classList.add("interest-search-error");
+    } 
   });
-
+ 
