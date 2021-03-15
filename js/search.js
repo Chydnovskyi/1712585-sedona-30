@@ -11,6 +11,7 @@ try {
 } catch (err) {
 	isStorageSupport = false;
 }
+searchPopup.classList.remove("interest-search-show");
 search.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	searchPopup.classList.toggle("interest-search-show");

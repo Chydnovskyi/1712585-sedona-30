@@ -350,12 +350,13 @@ img {
 	padding: 30px 125px;
 	width: 318px;
 	height: 26px;
-	align-content: center;
 	font-size: 21px;
 	line-height: 26px;
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
-	display: inline-block;
+	position: absolute;
+    z-index: 1;
+    left: 315px;
 }
 
 .button:hover {
@@ -930,6 +931,7 @@ legend {
 	box-sizing: border-box;
 	position: absolute;
 	left: 315px;
+    top: 291px;
 }
 
 .interest-search-show {
@@ -1171,20 +1173,13 @@ legend {
 }
 
 @keyframes bounce {
+
 	0% {
-		transform: translateY(0px);
-	}
-
-	70% {
-		transform: translateY(10px);
-	}
-
-	90% {
-		transform: translateY(-5px);
+		transform: translateY(-86px);
 	}
 
 	100% {
-		transform: translateY(0);
+		transform: translateY(0px);
 	}
 }
 
