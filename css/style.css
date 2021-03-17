@@ -1,6 +1,8 @@
 :root {
 	--basic-black: #000000;
 	--basic-azure: #81B3D2;
+	--basic-azure-bg: #6d869c;
+	--basic-azure-filter-bg: #47627c;
 	--basic-brown: #766357;
 	--basic-dark-azure: #5496BD;
 	--basic-extra-azure: #669EC0;
@@ -11,6 +13,7 @@
 	--basic-gray: #EEEEEE;
 	--basic-white-opacity: rgb(255, 255, 255, 0.3);
 	--basic-white-body: #F2F2F2;
+	--basic-disabled: #6A6A6A;
 	--basic-border-grey: #E5E5E5;
 	--basic-shadow: #ababab;
 	--basic-calendar: #A9A9A9;
@@ -82,9 +85,10 @@ img {
 .site-nav {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	height: 56px;
+	min-height: 56px;
 }
 
 .site-nav>li {
@@ -141,6 +145,7 @@ img {
 	width: 1200px;
 	height: 509px;
 	background: url("../img/background-photo.jpg") no-repeat;
+	background-color: var(--basic-azure-bg);
 	background-size: 100% auto;
 	display: block;
 }
@@ -160,7 +165,7 @@ img {
 }
 
 .description {
-	height: 216px;
+	min-height: 216px;
 	text-align: center;
 }
 
@@ -253,7 +258,7 @@ img {
 	margin: 0;
 }
 
-.product-reason-item h4 {
+ .product-reason-item h3 {
 	margin: 0;
 	font-size: 21px;
 	line-height: 21px;
@@ -349,11 +354,14 @@ img {
 .button {
 	padding: 30px 125px;
 	width: 318px;
-	height: 26px;
+	min-height: 26px;
 	font-size: 21px;
 	line-height: 26px;
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
+}
+
+.search {
 	position: absolute;
     z-index: 1;
     left: 315px;
@@ -369,7 +377,9 @@ img {
 }
 
 .map {
-	height: 473px;
+	min-height: 473px;
+	width: 100%;
+	background: url(../img/map.png) no-repeat;
 }
 
 .main-footer {
@@ -406,6 +416,7 @@ img {
 .social-list {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 }
@@ -557,7 +568,7 @@ img {
 .catalog-rating p {
 	margin: 0;
 	width: 110px;
-	height: 27px;
+	min-height: 27px;
 	padding: 3px 12px 3px 15px;
 	color: #666666;
 	background-color: #F2F2F2;
@@ -583,6 +594,7 @@ legend {
 	width: 1200px;
 	min-height: 217px;
 	background: url("../img/background.jpg") no-repeat;
+	background-color: var(--basic-azure-filter-bg);
 }
 
 .form-filter {
@@ -610,14 +622,33 @@ legend {
 	background: url(../img/checkbox-off.svg);
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox:checked+label::before {
 	content: "";
 	position: absolute;
 	width: 27px;
 	height: 23px;
 	left: -41px;
-	background: url(../img/checkbox-on.png);
+	background: url(../img/checkbox-on.svg);
 }
+
+.filter-input-checkbox:disabled+label::before {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	left: -41px;
+	background: url(../img/checkbox-off-disabled.svg);
+}
+
+.filter-input-checkbox:checked:disabled+label::before {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	left: -41px;
+	background: url(../img/checkbox-on-disabled.svg);
+}
+
 
 .form-filter legend {
 	font-size: 16px;
@@ -674,7 +705,7 @@ legend {
 	align-items: center;
 	border: 2px solid var(--basic-white);
 	width: 317px;
-	height: 36px;
+	min-height: 36px;
 	box-sizing: border-box;
 	text-align: center;
 	position: relative;
@@ -768,10 +799,15 @@ legend {
 	text-transform: uppercase;
 	color: var(--basic-white);
 	width: 137px;
-	height: 36px;
+	min-height: 36px;
 	background: transparent;
 	border: 2px solid var(--basic-white);
 	margin-right: 10px;
+}
+
+.price-button:hover {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
 }
 
 .filter-checkbox {
@@ -875,7 +911,7 @@ legend {
 .button-detailed {
 	text-align: center;
 	width: 110px;
-	height: 27px;
+	min-height: 27px;
 	padding: 3px 17px;
 	font-size: 14px;
 	line-height: 21px;
@@ -900,7 +936,7 @@ legend {
 	text-align: center;
 	padding: 3px 17px;
 	width: 142px;
-	height: 27px;
+	min-height: 27px;
 	font-size: 14px;
 	line-height: 21px;
 	box-sizing: border-box;
